@@ -1,6 +1,6 @@
 # cookieclicker98.github.io
 
-- Cookie Clicker in style of Windows 98
+- Cookie Clicker in style of Windows 98 - <a href="https://cookieclicker98.github.io">Play Now!</a>
 
 ## Roadmap
 
@@ -22,3 +22,5 @@
   - [?] toolbar with working clock
   - [?] music player
  ...more coming
+
+<img src="https://i.imgur.com/Rx0z6cV.png" width="33%" text-align="center"><img src="https://i.imgur.com/Rx0z6cV.png" width="33%" text-align="center"><img src="https://i.imgur.com/Rx0z6cV.png" width="33%" text-align="center">
