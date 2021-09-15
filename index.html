@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Clicker 98.exe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--
+                _             ____        __                __
+              (_)___ _____  / __ \____  / /___ _________  / /__
+             / / __ `/ __ \/ /_/ / __ \/ / __ `/ ___/ _ \/ //_/
+            / / /_/ / / / / ____/ /_/ / / /_/ / /__/  __/ ,<
+        __/ /\__,_/_/ /_/_/    \____/_/\__,_/\___/\___/_/|_|
+      /___/
+
+                © 2021 - Jan Polacek (neostetic)
+    -->
+</head>
+<body onload="startUp()">
+<div class="win-bgIcon fl" onclick="openWindow(1)">
+    <img src="assets/netshow-2.png" height="48" width="48"/><br>
+    Internet
+</div>
+<div class="win-bgIcon fl" onclick="openWindow(2)">
+    <img src="assets/computer_explorer_cool-0.png" height="48" width="48"/><br>
+    Computer
+</div>
+<a href="https://github.com/neostetic" target=”_blank”>
+    <div class="win-bgIcon fl">
+        <img src="assets/console_prompt-0.png" height="48" width="48"/><br>
+        Developer
+    </div>
+</a>
+
+<div class="win fl center" id="winWelcome">
+    <div class="win-title fl">
+        <div class="win-title-text fl">read-me.exe</div>
+        <button class="win-title-cross win-button fl" onclick="closeWindow(0)">X</button>
+    </div>
+    <div class="win-text fl center-text disabled">
+        <br>
+        <img src="assets/msg_warning-0.png" height="32" width="32"/><br>
+        <br>
+        Welcome to <b>Cookie Clicker 98</b><br>
+        <br><br>
+        Your goal is to <i>crash Bindowns 98</i> with <i>1mil errors promts.</i><br>
+        (because why not)<br>
+        <br>
+        You can connect to <i>THE INTERNET</i> to buy upgrades, but be aware,<br>
+        that it might take some time to complete the challenge.<br>
+        You can <i>download Viruses</i>, <i>Auto-Clicker</i> and more...<br>
+        <br>
+        Proceed by clicking one of those <b>buttons</b>.<br>
+        (this message won't be shown again)
+    </div>
+    <div class="win-buttons fl">
+        <button class="win-button" onclick="closeWindow(0)"><u>C</u>ancel</button>
+        <button class="win-button win-button-default" onclick="closeWindow(0)"><b><u>O</u>K</b></button>
+    </div>
+</div>
+
+<div class="win fl center" id="winError">
+    <div class="win-title fl">
+        <div class="win-title-text fl">FATAL ERROR x <span id="errorTitle">1</span> Errors</div>
+        <button class="win-title-cross win-button fl" onclick="getErrors()">X</button>
+    </div>
+    <div class="win-text fl">
+        <img src="assets/msg_warning-0.png" class="fl win-icon-left" height="32" width="32"/><br>
+        Bindowns 98 ran out of memory and encoutered a system error while running "Explorer.exe".<br>
+        <br>
+        Do you wish to resolve the issue?
+    </div>
+    <div class="win-buttons fl">
+        <button class="win-button" onclick="getErrors()"><u>C</u>ancel</button>
+        <button class="win-button win-button-default" onclick="getErrors()"><u>R</u>etry</button>
+        <button class="win-button win-button-default" onclick="getErrors()"><b><u>O</u>K</b></button>
+    </div>
+</div>
+
+<div class="win fl center" id="winInternet">
+    <div class="win-title fl">
+        <div class="win-title-text fl">Internet.exe</div>
+        <button class="win-title-cross win-button fl" onclick="closeWindow(1)">X</button>
+    </div>
+    <div class="win-text fl center-text">
+        <img src="assets/msie1-5.png" height="48" width="48"/><br>
+        <b>Welcome to "The Internet"</b>
+        <div>
+            <button class="win-button" onclick="buy(0)">
+                <img src="assets/mouse-5.png" height="48" width="48"/><br>
+                <b>Autoclicker x<span id="times0">0</span></b><br>
+                (+1EPS)<br>
+                <span id="costs0">50</span> errors
+            </button>
+            <button class="win-button" onclick="buy(1)">
+                <img src="assets/joystick-5.png" height="48" width="48"/><br>
+                <b>Cracked Game x<span id="times1">0</span></b><br>
+                (+1EPC)<br>
+                <span id="costs1">120</span> errors
+            </button>
+            <button class="win-button" onclick="buy(2)">
+                <img src="assets/clean_drive-4.png" height="48" width="48"/><br>
+                <b>PC Faster x<span id="times2">0</span></b><br>
+                (+10EPS)<br>
+                <span id="costs2">1000</span> errors
+            </button>
+            <button class="win-button" onclick="buy(3)">
+                <img src="assets/video_mk-5.png" height="48" width="48"/><br>
+                <b>Cracked Video x<span id="times3">0</span></b><br>
+                (+10EPC)<br>
+                <span id="costs3">2500</span> errors
+            </button>
+            <button class="win-button" onclick="buy(4)">
+                <img src="assets/windows_update_large-5.png" height="48" width="48"/><br>
+                <b>Crack Internet x<span id="times4">0</span></b><br>
+                (+100EPS)<br>
+                <span id="costs4">12500</span> errors
+            </button>
+            <button class="win-button" onclick="buy(5)">
+                <img src="assets/appwizard-5.png" height="48" width="48"/><br>
+                <b>Appwizard x<span id="times5">0</span></b><br>
+                (+100EPC)<br>
+                <span id="costs5">20000</span> errors
+            </button>
+        </div>
+        *EPS - Errors per Second<br>
+        *EPC - Errors per Click
+    </div>
+</div>
+<div class="win fl center" id="winComputer">
+    <div class="win-title fl">
+        <div class="win-title-text fl">Computer Settings</div>
+        <button class="win-title-cross win-button fl" onclick="closeWindow(2)">X</button>
+    </div>
+    <div class="win-text fl">
+        <b>System</b><br>
+        &emsp;&emsp;System Minesoft Bindowns 98<br>
+        &emsp;&emsp;First Edition<br>
+        &emsp;&emsp;A12:00.002<br>
+        <br>
+        <b>Registered User:</b><br>
+        &emsp;&emsp;Admin<br>
+        &emsp;&emsp;60DSG049H09283:A<br>
+        <br>
+        <b>Statistics:</b><br>
+        &emsp;&emsp;Errors Generated: <span id="errorGenerated">0</span><br>
+        &emsp;&emsp;Current EPS: <span id="errorsEPS">0</span><br>
+        &emsp;&emsp;Current EPC: <span id="errorsEPC">0</span><br>
+        <br>
+        <b>Change Background:</b><br>
+        &emsp;&emsp;
+        <button class="win-button cA"></button>
+        <button class="win-button cB"></button>
+        <button class="win-button cC"></button>
+        <button class="win-button cD"></button>
+        <button class="win-button cE"></button>
+        <button class="win-button cF"></button>
+        <button class="win-button cG"></button>
+        <button class="win-button cH"></button>
+        <button class="win-button cI"></button>
+        <button class="win-button cJ"></button>
+    </div>
+</div>
+<div class="win fl center" id="winFunds">
+    <div class="win-title fl">
+        <div class="win-title-text fl">Not Enough Of Funds</div>
+        <button class="win-title-cross win-button fl" onclick="closeWindow(4)">X</button>
+    </div>
+    <div class="win-text fl center-text">
+        Comeback, when you have more Errors;
+    </div>
+</div>
+<div class="footer">
+    © 2021 - Jan Polacek (<a href="https://github.com/neostetic" target=”_blank”>neostetic</a>)
+</div>
+<script src="script/cookie.js"></script>
+<script src="script/main.js"></script>
+</body>
+</html>
