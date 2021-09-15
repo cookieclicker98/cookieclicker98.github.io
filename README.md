@@ -22,5 +22,3 @@
   - [?] toolbar with working clock
   - [?] music player
  ...more coming
-
-<img src="https://i.imgur.com/Rx0z6cV.png" width="33%" text-align="center"><img src="https://i.imgur.com/Rx0z6cV.png" width="33%" text-align="center"><img src="https://i.imgur.com/Rx0z6cV.png" width="33%" text-align="center">
