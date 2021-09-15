@@ -2,6 +2,19 @@
 
 - Cookie Clicker in style of Windows 98 - <a href="https://cookieclicker98.github.io">Play Now!</a>
 
+## Change Log
+
+- version v1.1
+  - base prototype version completed
+  - added Upgrades, basic Statistic Menu
+  - added points multiplayer without function
+  - added working error pop-up
+
+- bug fixes
+  - clicks per seconds fix
+  - upgrade menu, fixed numbers and prices
+  - small code bugs
+
 ## Roadmap
 
 - Downloads/Upgrades:
@@ -19,8 +32,8 @@
   - [x] jscripts
   - [ ] computer.exe - change color, see xps/levels
   - [x] add clicker itself
-  - [ ] change log startup
+  - [ ] change log startup pop-up
   - [?] toolbar with working clock
   - [?] music player
   - [?] more backgrounds
- ...more coming
+  - [?] mobile version compatibility
