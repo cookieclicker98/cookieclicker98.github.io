@@ -1,4 +1,7 @@
 # cookieclicker98.github.io
+
+- Cookie Clicker in style of Windows 98
+
 ## Roadmap
 
 - Downloads/Upgrades:
