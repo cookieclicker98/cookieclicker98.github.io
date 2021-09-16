@@ -33,6 +33,8 @@
   - [ ] computer.exe - change color, see xps/levels
   - [x] add clicker itself
   - [ ] change log startup pop-up
+  - [ ] html to application
+  - [ ] 
   - [?] toolbar with working clock
   - [?] music player
   - [?] more backgrounds
