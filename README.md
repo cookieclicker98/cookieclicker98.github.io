@@ -1,19 +1,19 @@
 # cookieclicker98.github.io
 
 - Cookie Clicker in style of Windows 98 - <a href="https://cookieclicker98.github.io">Play Now!</a>
+- Your goal is to smash that Bindowns 98 to complete crash and BSOD.
 
 ## Change Log
 
-- version v1.1
+### version v1.1
   - base prototype version completed
   - added Upgrades, basic Statistic Menu
   - added points multiplayer without function
   - added working error pop-up
-
-- bug fixes
-  - clicks per seconds fix
-  - upgrade menu, fixed numbers and prices
-  - small code bugs
+  - bug fixes
+    - clicks per seconds fix
+    - upgrade menu, fixed numbers and prices
+    - small code bugs
 
 ## Roadmap
 
