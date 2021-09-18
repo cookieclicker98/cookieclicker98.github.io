@@ -70,6 +70,7 @@
   - [ ] html to application
   - [ ] gameplay indicators / tutorial
   - [ ] start up login
+  - [ ] internet - how many-o error indicator
   - [ ] story ?
   - [ ] toolbar with working clock ?
   - [ ] music player ?
