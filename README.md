@@ -7,17 +7,17 @@
 
 ### version v1.2 (incomplite)
 
- - internet icon change
- - computer window size changed (from 500 to 700)
- - added working background change
- - slightly altered Computer Settings
- - slightly altered Error Prompt
- - bug fixes
-  - easy nerf fix (need more testing)
-  - window overlap fix
-  - slightly more code organization
-  - fixed number of Upgrades
-  - altered cost of Upgrades
+  - internet icon change
+  - computer window size changed (from 500 to 700)
+  - added working background change
+  - slightly altered Computer Settings
+  - slightly altered Error Prompt
+  - bug fixes
+    - easy nerf fix (need more testing)
+    - window overlap fix
+    - slightly more code organization
+    - fixed number of Upgrades
+    - altered cost of Upgrades
 
 ### version v1.1
   - base prototype version completed
@@ -47,14 +47,16 @@
 - Add:
   - [ ] cookies
   - [x] jscripts
-  - [ ] computer.exe - change color, see xps/levels
+  - [x] more backgrounds ?
+  - [ ] computer.exe
+    - [x] change colors
+    - [ ] see xps/levels
   - [x] add clicker itself
   - [ ] change log startup pop-up
   - [ ] html to application
-  - [ ] gameplay indicators
+  - [ ] gameplay indicators / tutorial
   - [ ] start up login
-  - [?] story
-  - [?] toolbar with working clock
-  - [?] music player
-  - [?] more backgrounds
-  - [?] mobile version compatibility
+  - [ ] story ?
+  - [ ] toolbar with working clock ?
+  - [ ] music player ?
+  - [ ] mobile version compatibility ?
