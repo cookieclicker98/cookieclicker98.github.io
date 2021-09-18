@@ -5,7 +5,7 @@
 
 ## Change Log
 
-### version v1.2 (incomplite)
+### version v1.2 (incomplete)
 
   - internet icon change
   - computer window size changed (from 500 to 700)
