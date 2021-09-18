@@ -5,7 +5,7 @@
 
 ## Change Log
 
-### version v1.2 (incomplete)
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha">version v1.2 (incomplete)</a>
 
   - internet icon change
   - computer window size changed (from 500 to 700)
@@ -19,7 +19,7 @@
     - fixed number of Upgrades
     - altered cost of Upgrades
 
-### version v1.1
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1">version v1.1</a>
   - base prototype version completed
   - added Upgrades, basic Statistic Menu
   - added points multiplayer without function
