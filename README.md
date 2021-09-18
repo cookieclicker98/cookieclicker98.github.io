@@ -13,16 +13,16 @@
 <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha"><img src="https://i.imgur.com/CBalDfZ.png" width="12%"></a>
 
 - internet icon change
-  - computer window size changed (from 500 to 700)
-  - added working background change
-  - slightly altered Computer Settings
-  - slightly altered Error Prompt
-  - bug fixes
-    - easy nerf fix (need more testing)
-    - window overlap fix
-    - slightly more code organization
-    - fixed number of Upgrades
-    - altered cost of Upgrades
+- computer window size changed (from 500 to 700)
+- added working background change
+- slightly altered Computer Settings
+- slightly altered Error Prompt
+- bug fixes
+  - easy nerf fix (need more testing)
+  - window overlap fix
+  - slightly more code organization
+  - fixed number of Upgrades
+  - altered cost of Upgrades
 
 ### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1">version v1.1</a>
 <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1"><img src="https://i.imgur.com/CBalDfZ.png" width="12%"></a>
