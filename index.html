@@ -17,12 +17,16 @@
 </head>
 <body onload="startUp()">
 <div class="win-bgIcon fl" onclick="openWindow(1)">
-    <img src="assets/netshow-2.png" height="48" width="48"/><br>
+    <img src="assets/msie2-2.png" height="48" width="48"/><br>
     Internet
 </div>
 <div class="win-bgIcon fl" onclick="openWindow(2)">
     <img src="assets/computer_explorer_cool-0.png" height="48" width="48"/><br>
     Computer
+</div>
+<div class="win-bgIcon fl" onclick="openWindow(0)">
+    <img src="assets/notepad-2.png" height="48" width="48"/><br>
+    Changelog
 </div>
 <a href="https://github.com/neostetic" target=”_blank”>
     <div class="win-bgIcon fl">
@@ -33,7 +37,7 @@
 
 <div class="win fl center" id="winWelcome">
     <div class="win-title fl">
-        <div class="win-title-text fl">read-me.exe</div>
+        <div class="win-title-text fl">Changelog</div>
         <button class="win-title-cross win-button fl" onclick="closeWindow(0)">X</button>
     </div>
     <div class="win-text fl center-text disabled">
@@ -41,16 +45,8 @@
         <img src="assets/msg_warning-0.png" height="32" width="32"/><br>
         <br>
         Welcome to <b>Cookie Clicker 98</b><br>
-        <br><br>
-        Your goal is to <i>crash Bindowns 98</i> with <i>1mil errors promts.</i><br>
-        (because why not)<br>
         <br>
-        You can connect to <i>THE INTERNET</i> to buy upgrades, but be aware,<br>
-        that it might take some time to complete the challenge.<br>
-        You can <i>download Viruses</i>, <i>Auto-Clicker</i> and more...<br>
-        <br>
-        Proceed by clicking one of those <b>buttons</b>.<br>
-        (this message won't be shown again)
+        <iframe src="changelog.html" width="500" height="210"></iframe>
     </div>
     <div class="win-buttons fl">
         <button class="win-button" onclick="closeWindow(0)"><u>C</u>ancel</button>
@@ -89,43 +85,62 @@
                 <img src="assets/mouse-5.png" height="48" width="48"/><br>
                 <b>Autoclicker x<span id="times0">0</span></b><br>
                 (+1EPS)<br>
-                <span id="costs0">50</span> errors
+                <span id="costs0"></span> errors
             </button>
             <button class="win-button" onclick="buy(1)">
                 <img src="assets/joystick-5.png" height="48" width="48"/><br>
                 <b>Cracked Game x<span id="times1">0</span></b><br>
                 (+1EPC)<br>
-                <span id="costs1">120</span> errors
+                <span id="costs1"></span> errors
             </button>
             <button class="win-button" onclick="buy(2)">
                 <img src="assets/clean_drive-4.png" height="48" width="48"/><br>
                 <b>PC Faster x<span id="times2">0</span></b><br>
                 (+10EPS)<br>
-                <span id="costs2">1000</span> errors
+                <span id="costs2"></span> errors
             </button>
             <button class="win-button" onclick="buy(3)">
                 <img src="assets/video_mk-5.png" height="48" width="48"/><br>
                 <b>Cracked Video x<span id="times3">0</span></b><br>
                 (+10EPC)<br>
-                <span id="costs3">2500</span> errors
+                <span id="costs3"></span> errors
             </button>
             <button class="win-button" onclick="buy(4)">
                 <img src="assets/windows_update_large-5.png" height="48" width="48"/><br>
                 <b>Crack Internet x<span id="times4">0</span></b><br>
                 (+100EPS)<br>
-                <span id="costs4">12500</span> errors
+                <span id="costs4"></span> errors
             </button>
             <button class="win-button" onclick="buy(5)">
                 <img src="assets/appwizard-5.png" height="48" width="48"/><br>
                 <b>Appwizard x<span id="times5">0</span></b><br>
                 (+100EPC)<br>
-                <span id="costs5">20000</span> errors
+                <span id="costs5"></span> errors
+            </button>
+            <button class="win-button" onclick="buy(6)">
+                <img src="assets/directory_e-2.png" height="48" width="48"/><br>
+                <b>Delete History x<span id="times6">0</span></b><br>
+                (+1000EPC)<br>
+                <span id="costs6"></span> errors
+            </button>
+            <button class="win-button" onclick="buy(7)">
+                <img src="assets/chip_ramdrive-2.png" height="48" width="48"/><br>
+                <b>Upgrade Hardware x<span id="times7">0</span></b><br>
+                (+1000EPC)<br>
+                <span id="costs7"></span> errors
+            </button>
+            <button class="win-button" onclick="buy(8)">
+                <img src="assets/recycle_bin_empty-4.png" height="48" width="48"/><br>
+                <b>Recycle bin x<span id="times8">0</span></b><br>
+                (Adds Restart and Multiplayer)<br>
+                <span id="costs8"></span> errors
             </button>
         </div>
         *EPS - Errors per Second<br>
         *EPC - Errors per Click
     </div>
 </div>
+
 <div class="win fl center" id="winComputer">
     <div class="win-title fl">
         <div class="win-title-text fl">Computer Settings</div>
@@ -134,30 +149,33 @@
     <div class="win-text fl">
         <b>System</b><br>
         &emsp;&emsp;System Minesoft Bindowns 98<br>
-        &emsp;&emsp;First Edition<br>
-        &emsp;&emsp;A12:00.002<br>
+        &emsp;&emsp;First Edition (Browser)<br>
+        &emsp;&emsp;Y21:09:18<br>
+        &emsp;&emsp;v1.2<br>
         <br>
         <b>Registered User:</b><br>
-        &emsp;&emsp;Admin<br>
+        &emsp;&emsp;Admin (Host)<br>
         &emsp;&emsp;60DSG049H09283:A<br>
         <br>
         <b>Statistics:</b><br>
-        &emsp;&emsp;Errors Generated: <span id="errorGenerated">0</span><br>
+        &emsp;&emsp;Current Errors Generated: <span id="errorsGenerated">0</span><br>
+        &emsp;&emsp;Every Clicked Error: <span id="errorsClickedHolder">0</span><br>
+        &emsp;&emsp;Every Error Counted: <span id="errorMaxHolder">0</span><br>
+        &emsp;&emsp;Every Error Spend: <span id="errorsSpendHolder">0</span><br>
         &emsp;&emsp;Current EPS: <span id="errorsEPS">0</span><br>
         &emsp;&emsp;Current EPC: <span id="errorsEPC">0</span><br>
         <br>
         <b>Change Background:</b><br>
-        &emsp;&emsp;
-        <button class="win-button cA"></button>
-        <button class="win-button cB"></button>
-        <button class="win-button cC"></button>
-        <button class="win-button cD"></button>
-        <button class="win-button cE"></button>
-        <button class="win-button cF"></button>
-        <button class="win-button cG"></button>
-        <button class="win-button cH"></button>
-        <button class="win-button cI"></button>
-        <button class="win-button cJ"></button>
+        <button class="win-button cA" onclick="changeBackground('#008080')"></button>
+        <button class="win-button cB" onclick="changeBackground('#3b6ea5')"></button>
+        <button class="win-button cC" onclick="changeBackground('#023562')"></button>
+        <button class="win-button cD" onclick="changeBackground('#000080')"></button>
+        <button class="win-button cF" onclick="changeBackground('#ffccfe')"></button>
+        <button class="win-button cE" onclick="changeBackground('url(\'assets/backgrounds/classic.jpg\')')"></button>
+        <button class="win-button cG" onclick="changeBackground('url(\'assets/backgrounds/anime.jpg\')')"></button>
+        <button class="win-button cH" onclick="changeBackground('url(\'assets/backgrounds/vaporwave.jpg\')')"></button>
+        <button class="win-button cI" onclick="changeFontColor('#c3c2c7')"><span>T</span></button>
+        <button class="win-button cJ" onclick="changeFontColor('#0D0D0D')"><span>T</span></button>
     </div>
 </div>
 <div class="win fl center" id="winFunds">

@@ -1,18 +1,28 @@
 let errors = 1;
+let errorsMax = 1;
+let errorSpent = 0;
+let errorClicks = 0;
+
 let multiplayer = 1;
 let eps = 0 * multiplayer;
 let epc = 1 * multiplayer;
-let zIndex = 5;
 
-let buyAutc = 1;
-let buyGame = 1;
-let buyPcfs = 1;
-let buyCrvd = 1;
-let buyCrin = 1;
-let buyApwz = 1;
+let windowIndex = 5;
+
+let buyAutoclicker = 1;
+let buyCrackedgame = 1;
+let buyPcfaster = 1;
+let buyCrackedvideo = 1;
+let buyCrackedinternet = 1;
+let buyAppwizard = 1;
+let priceAutoclicker = 100;
+let priceCrackedgame = 200;
+let pricePcfaster = 10000;
+let priceCrackedvideo = 15000;
+let priceCrackedinternet = 1000000;
+let priceAppwizard = 1250000;
 
 let errorTitle = document.getElementById("errorTitle");
-let errorsGenerated = document.getElementById("errorGenerated");
 
 let times0 = document.getElementById("times0");
 let costs0 = document.getElementById("costs0");
@@ -34,6 +44,10 @@ let winError = document.getElementById("winError");
 let winFunds = document.getElementById("winFunds");
 let errorsEPS = document.getElementById("errorsEPS");
 let errorsEPC = document.getElementById("errorsEPC");
+let errorsGenerated = document.getElementById("errorsGenerated");
+let errorsClicked = document.getElementById("errorsClickedHolder");
+let errorMaxHolder = document.getElementById("errorMaxHolder");
+let errorsSpendHolder = document.getElementById("errorsSpendHolder");
 
 function closeWindow(id) {
     let styleId;
@@ -64,18 +78,38 @@ function openWindow(id) {
     } else if (id === 4) {
         styleId = winFunds;
     }
-    zIndex++;
     styleId.style.display = "block";
-    styleId.style.zIndex = zIndex;
+    topWindow(id);
+}
+
+function topWindow(id) {
+    let styleId;
+    if (id === 0) {
+        styleId = winWelcome;
+    } else if (id === 1) {
+        styleId = winInternet;
+    } else if (id === 2) {
+        styleId = winComputer;
+    } else if (id === 3) {
+        styleId = winError;
+    } else if (id === 4) {
+        styleId = winFunds;
+    }
+    windowIndex++;
+    styleId.style.display = "block";
+    styleId.style.zIndex = windowIndex;
 }
 
 function getErrors() {
     errors = errors + 1*epc;
+    errorsMax = errorsMax + 1*epc;
+    errorClicks++;
     updateErrors();
 }
 
 function getEPS() {
     errors = errors + eps;
+    errorsMax = errorsMax + eps;
     setTimeout(getEPS,1000);
     updateErrors();
 }
@@ -85,18 +119,21 @@ function updateErrors() {
     errorsGenerated.innerHTML = errors;
     errorsEPC.innerHTML = epc;
     errorsEPS.innerHTML = eps;
-    times0.innerHTML = buyAutc;
-    costs0.innerHTML = (buyAutc*50);
-    times1.innerHTML = buyGame;
-    costs1.innerHTML = (buyGame*120);
-    times2.innerHTML = buyPcfs;
-    costs2.innerHTML = (buyPcfs*1000);
-    times3.innerHTML = buyCrvd;
-    costs3.innerHTML = (buyCrvd*2500);
-    times4.innerHTML = buyCrin;
-    costs4.innerHTML = (buyCrin*12500);
-    times5.innerHTML = buyApwz;
-    costs5.innerHTML = (buyApwz*20000);
+    errorsClicked.innerHTML = errorClicks;
+    errorsSpendHolder.innerHTML = errorSpent;
+    errorMaxHolder.innerHTML = errorsMax;
+    times0.innerHTML = buyAutoclicker-1;
+    costs0.innerHTML = (buyAutoclicker*priceAutoclicker);
+    times1.innerHTML = buyCrackedgame-1;
+    costs1.innerHTML = (buyCrackedgame*priceCrackedgame);
+    times2.innerHTML = buyPcfaster-1;
+    costs2.innerHTML = (buyPcfaster*pricePcfaster);
+    times3.innerHTML = buyCrackedvideo-1;
+    costs3.innerHTML = (buyCrackedvideo*priceCrackedvideo);
+    times4.innerHTML = buyCrackedinternet-1;
+    costs4.innerHTML = (buyCrackedinternet*priceCrackedinternet);
+    times5.innerHTML = buyAppwizard-1;
+    costs5.innerHTML = (buyAppwizard*priceAppwizard);
 }
 
 function buy(itemId) {
@@ -104,57 +141,58 @@ function buy(itemId) {
     let idBuyName;
     switch (itemId) {
         case 0:
-            price = 50;
-            idBuyName = buyAutc;
+            price = priceAutoclicker;
+            idBuyName = buyAutoclicker;
             break;
         case 1:
-            price = 120;
-            idBuyName = buyGame;
+            price = priceCrackedgame;
+            idBuyName = buyCrackedgame;
             break;
         case 2:
-            price = 1000;
-            idBuyName = buyPcfs;
+            price = pricePcfaster;
+            idBuyName = buyPcfaster;
             break;
         case 3:
-            price = 2500;
-            idBuyName = buyCrvd;
+            price = priceCrackedvideo;
+            idBuyName = buyCrackedvideo;
             break;
         case 4:
-            price = 12500;
-            idBuyName = buyCrin;
+            price = priceCrackedinternet;
+            idBuyName = buyCrackedinternet;
             break;
         case 5:
-            price = 20000;
-            idBuyName = buyApwz;
+            price = priceAppwizard;
+            idBuyName = buyAppwizard;
             break;
         default:
             break;
     }
     if (errors >= price*idBuyName) {
         errors = errors - price*idBuyName;
+        errorSpent = price*idBuyName + errorSpent;
         switch (itemId) {
             case 0:
-                buyAutc++;
+                buyAutoclicker++;
                 eps++;
                 break;
             case 1:
-                buyGame++;
+                buyCrackedgame++;
                 epc++;
                 break;
             case 2:
-                buyPcfs++;
+                buyPcfaster++;
                 eps = eps+10;
                 break;
             case 3:
-                buyCrvd++;
+                buyCrackedvideo++;
                 epc = epc+10;
                 break;
             case 4:
-                buyCrin++;
+                buyCrackedinternet++;
                 eps = eps+100;
                 break;
             case 5:
-                buyApwz++;
+                buyAppwizard++;
                 epc = epc+100;
                 break;
             default:
@@ -164,5 +202,13 @@ function buy(itemId) {
         openWindow(4);
     }
     setTimeout(updateErrors,0);
+}
 
+function changeBackground(color_text) {
+    document.body.style.background = color_text + " fixed center center no-repeat";
+    document.body.style.backgroundSize = "cover";
+}
+
+function changeFontColor(font_color) {
+    document.getElementsByClassName("win-bgIcon").style.color = font_color;
 }
