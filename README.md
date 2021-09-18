@@ -1,13 +1,18 @@
 # cookieclicker98.github.io
 
 - It is year 1998, you are stuck home, wondering what you should do... You swiched on your Bindows Computer and try to surf on the internet, when Error Message pop-up. Will you be the ever first man, to get to the a million error promts? Let's find out who has the worst computer ever.
-- Cookie Clicker in style of Windows 98 - <a href="https://cookieclicker98.github.io">Play Now!</a>
+- Cookie Clicker in style of Windows 98 - <a href="https://cookieclicker98.github.io">Play Now!</a><br>
+<br>
+<a href="https://cookieclicker98.github.io"><img src="https://i.imgur.com/9qY4zpN.png" width="12%"></a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases"><img src="https://i.imgur.com/dkawIwx.png" width="12%"></a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/tree/experimental"><img src="https://i.imgur.com/lQhHnNA.png" width="12%"></a>
 
 ## Change Log
 
 ### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha">version v1.2 (incomplete)</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha"><img src="https://i.imgur.com/CBalDfZ.png" width="12%"></a>
 
-  - internet icon change
+- internet icon change
   - computer window size changed (from 500 to 700)
   - added working background change
   - slightly altered Computer Settings
@@ -20,6 +25,7 @@
     - altered cost of Upgrades
 
 ### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1">version v1.1</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1"><img src="https://i.imgur.com/CBalDfZ.png" width="12%"></a>
   - base prototype version completed
   - added Upgrades, basic Statistic Menu
   - added points multiplayer without function
