@@ -13,11 +13,11 @@
  - slightly altered Computer Settings
  - slightly altered Error Prompt
  - bug fixes
-   - easy nerf fix (need more testing)
-   - window overlap fix
-   - slightly more code organization
-   - fixed number of Upgrades
-   - altered cost of Upgrades
+  - easy nerf fix (need more testing)
+  - window overlap fix
+  - slightly more code organization
+  - fixed number of Upgrades
+  - altered cost of Upgrades
 
 ### version v1.1
   - base prototype version completed
