@@ -8,6 +8,7 @@
 </a>
 <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/tree/experimental">
   <img src="https://i.imgur.com/lQhHnNA.png" width="128px">
+  <img src="https://i.imgur.com/msrNZnw.png" height="52px">
 </a>
 <br>
 - It is year 1998, you are stuck home, wondering what you should do... You swiched on your Bindows Computer and try to surf on the internet, when Error Message pop-up. Will you be the ever first man, to get to the a million error promts? Let's find out who has the worst computer ever.
@@ -32,7 +33,10 @@
   - altered cost of Upgrades
 
 ### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1">version v1.1</a>
-<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.1">
+  <img src="https://i.imgur.com/CBalDfZ.png" width="128px">
+  <img src="https://i.imgur.com/uoNuyt1.png" width="128px">
+</a>
 
   - base prototype version completed
   - added Upgrades, basic Statistic Menu
