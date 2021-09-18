@@ -1,5 +1,6 @@
 # cookieclicker98.github.io
 
+- It is year 1998, you are stuck home, wondering what you should do... You swiched on your Bindows Computer and try to surf on the internet, when Error Message pop-up. Will you be the ever first man, to get to the a million error promts? Let's find out who has the worst computer ever.
 - Cookie Clicker in style of Windows 98 - <a href="https://cookieclicker98.github.io">Play Now!</a>
 - Your goal is to smash that Bindowns 98 to complete crash and BSOD.
 
@@ -26,6 +27,7 @@
   - [x] pc cleaner (+Even More Errors Per Second)
   - [ ] recycle bin (adds Restart and Multiplayer)
     - [ ] after clicking => bsod, game restarts and adds multiplayer
+  - [ ] gameplay loop / nerf things, very easy to get to the last upgrade
 
 - Add:
   - [ ] cookies
@@ -34,7 +36,9 @@
   - [x] add clicker itself
   - [ ] change log startup pop-up
   - [ ] html to application
-  - [ ] 
+  - [ ] gameplay indicators
+  - [ ] start up login
+  - [?] story
   - [?] toolbar with working clock
   - [?] music player
   - [?] more backgrounds
