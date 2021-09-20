@@ -21,7 +21,6 @@
 <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
 <a href="https://cookieclicker98.github.io"><img src="https://i.imgur.com/9qY4zpN.png" width="128px"></a>
 
-<b>version v1.2</b><br>
 - altered computer window
 - altered wallpapers/backgrounds 
 - added working BSOD
