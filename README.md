@@ -81,7 +81,10 @@
 
 - Add:
   - [ ] cookies
+    - [ ] saving progress
+    - [ ] saving statistics
   - [x] jscripts
+    - [x] functions and classes
   - [x] more backgrounds ?
     - [x] windows backgrounds
     - [ ] custom user backgrounds
@@ -89,12 +92,20 @@
     - [x] change colors
     - [ ] see xps/levels
   - [x] add clicker itself
+    - [x] error prompr 
   - [ ] change log startup pop-up
   - [ ] html to application
+    - [ ] make playeble windows .EXE verion 
   - [ ] gameplay indicators / tutorial
   - [ ] start up login
-  - [ ] internet - how many-o error indicator
+    - [ ] custom username 
+  - [x] internet
+    - [x] upgrades 
+    - [ ] error indicator
   - [ ] story ?
   - [ ] toolbar with working clock ?
   - [ ] music player ?
+    - [ ] <a href="https://www.youtube.com/playlist?list=PLwC2TnnAxEL39JinEItcJHv3wSsg0s_wq">this</a> playlist 
   - [ ] mobile version compatibility ?
+    - [ ] website responsive
+    - [ ] custom application / game 
