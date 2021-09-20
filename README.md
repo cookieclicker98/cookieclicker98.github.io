@@ -83,6 +83,8 @@
   - [ ] cookies
   - [x] jscripts
   - [x] more backgrounds ?
+    - [x] windows backgrounds
+    - [ ] custom user backgrounds
   - [ ] computer.exe
     - [x] change colors
     - [ ] see xps/levels
