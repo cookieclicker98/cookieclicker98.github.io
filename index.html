@@ -5,7 +5,7 @@
     <title>Cookie Clicker 98.exe</title>
     <link rel="stylesheet" href="css/style.css">
     <!--
-                _             ____        __                __
+               _             ____        __                __
               (_)___ _____  / __ \____  / /___ _________  / /__
              / / __ `/ __ \/ /_/ / __ \/ / __ `/ ___/ _ \/ //_/
             / / /_/ / / / / ____/ /_/ / / /_/ / /__/  __/ ,<
@@ -71,7 +71,6 @@
         <button class="win-button win-button-default" onclick="getErrors()"><b><u>O</u>K</b></button>
     </div>
 </div>
-
 <div class="win fl center" id="winInternet">
     <div class="win-title fl">
         <div class="win-title-text fl">Internet.exe</div>
@@ -120,7 +119,7 @@
             <button class="win-button" onclick="buy(6)">
                 <img src="assets/directory_e-2.png" height="48" width="48"/><br>
                 <b>Delete History x<span id="times6">0</span></b><br>
-                (+1000EPC)<br>
+                (+1000EPS)<br>
                 <span id="costs6"></span> errors
             </button>
             <button class="win-button" onclick="buy(7)">
@@ -141,6 +140,7 @@
     </div>
 </div>
 
+
 <div class="win fl center" id="winComputer">
     <div class="win-title fl">
         <div class="win-title-text fl">Computer Settings</div>
@@ -149,21 +149,21 @@
     <div class="win-text fl">
         <b>System</b><br>
         &emsp;&emsp;System Minesoft Bindowns 98<br>
-        &emsp;&emsp;First Edition (Browser)<br>
-        &emsp;&emsp;Y21:09:18<br>
-        &emsp;&emsp;v1.2<br>
+        &emsp;&emsp;Version 1.2 (Html Edition)<br>
+        &emsp;&emsp;Y21:09:20<br>
         <br>
         <b>Registered User:</b><br>
         &emsp;&emsp;Admin (Host)<br>
         &emsp;&emsp;60DSG049H09283:A<br>
         <br>
         <b>Statistics:</b><br>
-        &emsp;&emsp;Current Errors Generated: <span id="errorsGenerated">0</span><br>
-        &emsp;&emsp;Every Clicked Error: <span id="errorsClickedHolder">0</span><br>
-        &emsp;&emsp;Every Error Counted: <span id="errorMaxHolder">0</span><br>
-        &emsp;&emsp;Every Error Spend: <span id="errorsSpendHolder">0</span><br>
-        &emsp;&emsp;Current EPS: <span id="errorsEPS">0</span><br>
-        &emsp;&emsp;Current EPC: <span id="errorsEPC">0</span><br>
+        &emsp;&emsp;Current Errors Generated: <span id="errorsGenerated"></span><br>
+        &emsp;&emsp;Every Clicked Error: <span id="errorsClickedHolder"></span><br>
+        &emsp;&emsp;Every Error Counted: <span id="errorMaxHolder"></span><br>
+        &emsp;&emsp;Every Error Spend: <span id="errorsSpendHolder"></span><br>
+        &emsp;&emsp;Current EPS: <span id="errorsEPS"></span><br>
+        &emsp;&emsp;Current EPC: <span id="errorsEPC"></span><br>
+        &emsp;&emsp;Current Multiplayer: <span id="errorsMP"></span>x<br>
         <br>
         <b>Change Background:</b><br>
         <button class="win-button cA" onclick="changeBackground('#008080')"></button>
@@ -172,10 +172,15 @@
         <button class="win-button cD" onclick="changeBackground('#000080')"></button>
         <button class="win-button cF" onclick="changeBackground('#ffccfe')"></button>
         <button class="win-button cE" onclick="changeBackground('url(\'assets/backgrounds/classic.jpg\')')"></button>
-        <button class="win-button cG" onclick="changeBackground('url(\'assets/backgrounds/anime.jpg\')')"></button>
-        <button class="win-button cH" onclick="changeBackground('url(\'assets/backgrounds/vaporwave.jpg\')')"></button>
-        <button class="win-button cI" onclick="changeFontColor('#c3c2c7')"><span>T</span></button>
-        <button class="win-button cJ" onclick="changeFontColor('#0D0D0D')"><span>T</span></button>
+        <button class="win-button cG" onclick="changeBackground('url(\'assets/backgrounds/aesthetic.jpg\')')"></button>
+        <button class="win-button cH" onclick="changeBackground('url(\'assets/backgrounds/vaporwave.jpg\')')"></button><br>
+        <br>
+        <b>Change Text Color:</b><br>
+        <button class="win-button cI" onclick="changeFontColor('white')"><span>T</span></button>
+        <button class="win-button cJ" onclick="changeFontColor('black')"><span>T</span></button>
+        <button class="win-button cK" onclick="changeFontColor('red')"><span>T</span></button>
+        <button class="win-button cL" onclick="changeFontColor('green')"><span>T</span></button>
+        <button class="win-button cM" onclick="changeFontColor('blue')"><span>T</span></button>
     </div>
 </div>
 <div class="win fl center" id="winFunds">
@@ -185,6 +190,21 @@
     </div>
     <div class="win-text fl center-text">
         Comeback, when you have more Errors;
+    </div>
+</div>
+<div class="win-bsod" id="winBsod" onclick="closeWindow(5)">
+    <div class="center">
+        <div class="win-bsod-centerLogo">
+            <span class="win-bsod-logo">Bindowns</span>
+        </div>
+        <br>
+        An error has occurred. To continue:<br>
+        <br>
+        <b>Click on Screen</b> to return to your work you were doing, or:<br>
+        <br>
+        Press CTRL+L and write "github.com/neostetic". Press the follow button the Creator and make him bit happy that he finally gets the followers he wants.<br>
+        <br>
+        Error: TH4T-W0U1D-B3-N1C3 :)
     </div>
 </div>
 <div class="footer">

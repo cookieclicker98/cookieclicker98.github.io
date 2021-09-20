@@ -16,9 +16,27 @@
 - Play now on: <a href="https://cookieclicker98.github.io">cookieclicker98.github.io</a><br>
 
 ## Change Log
-### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha">version v1.2 (incomplete)</a>
-<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
+
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">version v1.2</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
 <a href="https://cookieclicker98.github.io"><img src="https://i.imgur.com/9qY4zpN.png" width="128px"></a>
+
+<b>version v1.2</b><br>
+- altered computer window
+- altered wallpapers/backgrounds 
+- added working BSOD
+- added working restart with multiplayer
+- added change text color
+- bug fixes
+  - this <a href="https://github.com/cookieclicker98/cookieclicker98.github.io" target="_blank">Github page</a> hyper-link
+  - fixed changeFontColor function
+  - new upgrades functions
+
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha">version v1.2-alpha</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2-alpha">
+  <img src="https://i.imgur.com/CBalDfZ.png" width="128px">
+  <img src="https://i.imgur.com/uoNuyt1.png" width="128px">
+</a>
 
 - internet icon change
 - computer window size changed (from 500 to 700)
@@ -38,14 +56,14 @@
   <img src="https://i.imgur.com/uoNuyt1.png" width="128px">
 </a>
 
-  - base prototype version completed
-  - added Upgrades, basic Statistic Menu
-  - added points multiplayer without function
-  - added working error pop-up
-  - bug fixes
-    - clicks per seconds fix
-    - upgrade menu, fixed numbers and prices
-    - small code bugs
+- base prototype version completed
+- added Upgrades, basic Statistic Menu
+- added points multiplayer without function
+- added working error pop-up
+- bug fixes
+  - clicks per seconds fix
+  - upgrade menu, fixed numbers and prices
+  - small code bugs
 
 ## Roadmap
 
@@ -56,10 +74,10 @@
   - [x] pc faster 2000 (+More Errors Per Second)
   - [x] appwizard crack (+Even More Errors Per Click)
   - [x] pc cleaner (+Even More Errors Per Second)
-  - [ ] delete internet history (+Even More More Errors Per Click)
-  - [ ] hardware upgrade (+Even More More Errors Per Second)
-  - [ ] recycle bin (adds Restart and Multiplayer)
-    - [ ] after clicking => bsod, game restarts and adds multiplayer
+  - [x] delete internet history (+Even More More Errors Per Click)
+  - [x] hardware upgrade (+Even More More Errors Per Second)
+  - [x] recycle bin (adds Restart and Multiplayer)
+    - [x] after clicking => bsod, game restarts and adds multiplayer
   - [ ] gameplay loop / nerf things, very easy to get to the last upgrade
 
 - Add:

@@ -15,12 +15,18 @@ let buyPcfaster = 1;
 let buyCrackedvideo = 1;
 let buyCrackedinternet = 1;
 let buyAppwizard = 1;
+let buyDeletehistory = 1;
+let buyUpgradehardware = 1;
+let buyRecyclebin = 1;
 let priceAutoclicker = 100;
 let priceCrackedgame = 200;
 let pricePcfaster = 10000;
 let priceCrackedvideo = 15000;
 let priceCrackedinternet = 1000000;
 let priceAppwizard = 1250000;
+let priceDeletehistory = 1750000;
+let priceUpgradehardware = 2500000;
+let priceRecyclebin = 12500000;
 
 let errorTitle = document.getElementById("errorTitle");
 
@@ -36,14 +42,22 @@ let times4 = document.getElementById("times4");
 let costs4 = document.getElementById("costs4");
 let times5 = document.getElementById("times5");
 let costs5 = document.getElementById("costs5");
+let times6 = document.getElementById("times6");
+let costs6 = document.getElementById("costs6");
+let times7 = document.getElementById("times7");
+let costs7 = document.getElementById("costs7");
+let times8 = document.getElementById("times8");
+let costs8 = document.getElementById("costs8");
 
 let winWelcome = document.getElementById("winWelcome");
 let winInternet = document.getElementById("winInternet");
 let winComputer = document.getElementById("winComputer");
 let winError = document.getElementById("winError");
 let winFunds = document.getElementById("winFunds");
+let winBsod = document.getElementById("winBsod");
 let errorsEPS = document.getElementById("errorsEPS");
 let errorsEPC = document.getElementById("errorsEPC");
+let errorsMP = document.getElementById("errorsMP");
 let errorsGenerated = document.getElementById("errorsGenerated");
 let errorsClicked = document.getElementById("errorsClickedHolder");
 let errorMaxHolder = document.getElementById("errorMaxHolder");
@@ -61,6 +75,8 @@ function closeWindow(id) {
         styleId = winError;
     } else if (id === 4) {
         styleId = winFunds;
+    } else if (id === 5) {
+        styleId = winBsod;
     }
     styleId.style.display = "none";
 }
@@ -77,6 +93,9 @@ function openWindow(id) {
         styleId = winError;
     } else if (id === 4) {
         styleId = winFunds;
+    } else if (id === 5) {
+        styleId = winBsod;
+        setTimeout(openWindow(3), 1839);
     }
     styleId.style.display = "block";
     topWindow(id);
@@ -94,6 +113,8 @@ function topWindow(id) {
         styleId = winError;
     } else if (id === 4) {
         styleId = winFunds;
+    } else if (id === 5) {
+        styleId = winBsod;
     }
     windowIndex++;
     styleId.style.display = "block";
@@ -101,8 +122,8 @@ function topWindow(id) {
 }
 
 function getErrors() {
-    errors = errors + 1*epc;
-    errorsMax = errorsMax + 1*epc;
+    errors = errors + 1*epc*multiplayer;
+    errorsMax = errorsMax + 1*epc*multiplayer;
     errorClicks++;
     updateErrors();
 }
@@ -120,8 +141,9 @@ function updateErrors() {
     errorsEPC.innerHTML = epc;
     errorsEPS.innerHTML = eps;
     errorsClicked.innerHTML = errorClicks;
-    errorsSpendHolder.innerHTML = errorSpent;
-    errorMaxHolder.innerHTML = errorsMax;
+    errorsSpendHolder.innerHTML = errorSpent*multiplayer;
+    errorMaxHolder.innerHTML = errorsMax*multiplayer;
+    errorsMP.innerHTML = multiplayer;
     times0.innerHTML = buyAutoclicker-1;
     costs0.innerHTML = (buyAutoclicker*priceAutoclicker);
     times1.innerHTML = buyCrackedgame-1;
@@ -134,6 +156,12 @@ function updateErrors() {
     costs4.innerHTML = (buyCrackedinternet*priceCrackedinternet);
     times5.innerHTML = buyAppwizard-1;
     costs5.innerHTML = (buyAppwizard*priceAppwizard);
+    times6.innerHTML = buyDeletehistory-1;
+    costs6.innerHTML = (buyDeletehistory*priceDeletehistory);
+    times7.innerHTML = buyUpgradehardware-1;
+    costs7.innerHTML = (buyUpgradehardware*priceUpgradehardware);
+    times8.innerHTML = buyRecyclebin-1;
+    costs8.innerHTML = (buyRecyclebin*priceRecyclebin);
 }
 
 function buy(itemId) {
@@ -163,6 +191,18 @@ function buy(itemId) {
         case 5:
             price = priceAppwizard;
             idBuyName = buyAppwizard;
+            break;
+        case 6:
+            price = priceDeletehistory;
+            idBuyName = buyDeletehistory;
+            break;
+        case 7:
+            price = priceUpgradehardware;
+            idBuyName = buyUpgradehardware;
+            break;
+        case 8:
+            price = priceRecyclebin;
+            idBuyName = buyRecyclebin;
             break;
         default:
             break;
@@ -195,6 +235,18 @@ function buy(itemId) {
                 buyAppwizard++;
                 epc = epc+100;
                 break;
+            case 6:
+                buyDeletehistory++;
+                eps = eps+1000;
+                break;
+            case 7:
+                buyUpgradehardware++;
+                epc = epc+1000;
+                break;
+            case 8:
+                buyRecyclebin++;
+                setTimeout(restartGame, 2537);
+                break;
             default:
                 break;
         }
@@ -204,11 +256,42 @@ function buy(itemId) {
     setTimeout(updateErrors,0);
 }
 
+function restartGame() {
+    errors = 1;
+    multiplayer = multiplayer+0.5;
+    eps = 0 * multiplayer;
+    epc = 1 * multiplayer;
+    buyAutoclicker = 1;
+    buyCrackedgame = 1;
+    buyPcfaster = 1;
+    buyCrackedvideo = 1;
+    buyCrackedinternet = 1;
+    buyAppwizard = 1;
+    buyDeletehistory = 1;
+    buyUpgradehardware = 1;
+    buyRecyclebin = 1;
+    priceAutoclicker = 100;
+    priceCrackedgame = 200;
+    pricePcfaster = 10000;
+    priceCrackedvideo = 15000;
+    priceCrackedinternet = 1000000;
+    priceAppwizard = 1250000;
+    priceDeletehistory = 1750000;
+    priceUpgradehardware = 2500000;
+    priceRecyclebin = 12500000;
+    updateErrors();
+    closeWindow(1);
+    closeWindow(2);
+    closeWindow(3);
+    closeWindow(4);
+    openWindow(5);
+}
+
 function changeBackground(color_text) {
     document.body.style.background = color_text + " fixed center center no-repeat";
     document.body.style.backgroundSize = "cover";
 }
 
 function changeFontColor(font_color) {
-    document.getElementsByClassName("win-bgIcon").style.color = font_color;
+    document.documentElement.style.setProperty('--text-color', font_color);
 }

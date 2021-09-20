@@ -4,6 +4,7 @@
     --ms-winBackground-dark: hsl(0, 0%, Calc(var(--ms-win) - 50%));
     --ms-winBackground-light: hsl(0, 0%, Calc(var(--ms-win) + 50%));
     --ms-background: #008080;
+    --text-color: white;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
@@ -73,8 +74,8 @@ button {
 
 .win-bgIcon {
     padding: 16px;
-    color: white;
     font-size: 12px;
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -186,10 +187,13 @@ button {
 .cD, .cD:hover {background: #000080;}
 .cF, .cF:hover {background: #ffccfe;}
 .cE, .cE:hover {background: url("../assets/backgrounds/classic.jpg");}
-.cG, .cG:hover {background: url("../assets/backgrounds/anime.jpg");}
+.cG, .cG:hover {background: url("../assets/backgrounds/aesthetic.jpg");}
 .cH, .cH:hover {background: url("../assets/backgrounds/vaporwave.jpg");}
 .cI, .cI:hover {background: #0D0D0D; color: #c3c2c7}
 .cJ, .cJ:hover {background: #c3c2c7;}
+.cK {color: red;}
+.cL {color: green;}
+.cM {color: blue;}
 
 #winError {
     z-index: 1;
@@ -201,6 +205,29 @@ button {
     width: 360px;
     display: none;
 }
+
+#winBsod {
+    display: none;
+}
+
+.win-bsod {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    position: absolute;
+    z-index: 9999999999999999999999999999999;
+    font-size: 20px;
+}
+
+.win-bsod > div {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: left;
+}
+
+.win-bsod-centerLogo {text-align: center;}
+.win-bsod-logo {background: white; color: blue; padding: 0 20px}
 
 .footer {
     width: 100%;
