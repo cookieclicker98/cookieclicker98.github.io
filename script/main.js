@@ -77,6 +77,7 @@ function closeWindow(id) {
         styleId = winFunds;
     } else if (id === 5) {
         styleId = winBsod;
+        setTimeout(openWindow(3), 1839);
     }
     styleId.style.display = "none";
 }
@@ -95,7 +96,6 @@ function openWindow(id) {
         styleId = winFunds;
     } else if (id === 5) {
         styleId = winBsod;
-        setTimeout(openWindow(3), 1839);
     }
     styleId.style.display = "block";
     topWindow(id);
@@ -122,8 +122,8 @@ function topWindow(id) {
 }
 
 function getErrors() {
-    errors = errors + 1*epc*multiplayer;
-    errorsMax = errorsMax + 1*epc*multiplayer;
+    errors = errors + 1*epc;
+    errorsMax = errorsMax + 1*epc;
     errorClicks++;
     updateErrors();
 }
