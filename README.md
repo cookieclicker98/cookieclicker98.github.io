@@ -10,7 +10,6 @@
   <img src="https://i.imgur.com/lQhHnNA.png" width="128px">
   <img src="https://i.imgur.com/msrNZnw.png" height="52px">
 </a>
-<br>
 - It is year 1998, you are stuck home, wondering what you should do... You swiched on your Bindows Computer and try to surf on the internet, when Error Message pop-up. Will you be the ever first man, to get to the a million error promts? Let's find out who has the worst computer ever.
 - Cookie Clicker in style of Windows 98.
 - Play now on: <a href="https://cookieclicker98.github.io">cookieclicker98.github.io</a><br>
@@ -24,7 +23,7 @@
 - altered computer window
 - altered wallpapers/backgrounds 
 - added working BSOD
-- added working restart with multiplayer
+- added working restart with multipier
 - added change text color
 - bug fixes
   - this <a href="https://github.com/cookieclicker98/cookieclicker98.github.io" target="_blank">Github page</a> hyper-link
@@ -57,7 +56,7 @@
 
 - base prototype version completed
 - added Upgrades, basic Statistic Menu
-- added points multiplayer without function
+- added points multipier without function
 - added working error pop-up
 - bug fixes
   - clicks per seconds fix
