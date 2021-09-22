@@ -81,8 +81,8 @@
   - [x] more backgrounds ?
     - [x] windows backgrounds
     - [ ] custom user backgrounds
-  - [ ] computer.exe
-    - [x] change colors
+  - [x] computer.exe
+    - [x] change aperience
     - [ ] see xps/levels
   - [x] add clicker itself
     - [x] error prompr 
