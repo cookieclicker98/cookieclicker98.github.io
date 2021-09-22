@@ -23,7 +23,7 @@
 - altered computer window
 - altered wallpapers/backgrounds 
 - added working BSOD
-- added working restart with multipier
+- added working restart with multiplier
 - added change text color
 - bug fixes
   - this <a href="https://github.com/cookieclicker98/cookieclicker98.github.io" target="_blank">Github page</a> hyper-link
@@ -56,7 +56,7 @@
 
 - base prototype version completed
 - added Upgrades, basic Statistic Menu
-- added points multipier without function
+- added points multiplier without function
 - added working error pop-up
 - bug fixes
   - clicks per seconds fix
