@@ -66,18 +66,10 @@
 
 ## Roadmap
 
-- Downloads/Upgrades:
-  - [x] ilegally cracked game (+Errors Per Click)
-  - [x] autoclicker (+Errors Per Second)
-  - [x] cracked video editing software (+More Errors Per Click)
-  - [x] pc faster 2000 (+More Errors Per Second)
-  - [x] appwizard crack (+Even More Errors Per Click)
-  - [x] pc cleaner (+Even More Errors Per Second)
-  - [x] delete internet history (+Even More More Errors Per Click)
-  - [x] hardware upgrade (+Even More More Errors Per Second)
-  - [x] recycle bin (adds Restart and Multiplayer)
-    - [x] after clicking => bsod, game restarts and adds multiplayer
-  - [ ] gameplay loop / nerf things, very easy to get to the last upgrade
+- Todo
+  - [ ] change "Multiplayer" to "Multiplier" (miss understand)
+  - [ ] some roadmap
+  - [ ] bug fixes
 
 - Add:
   - [ ] cookies
