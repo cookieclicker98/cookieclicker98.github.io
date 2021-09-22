@@ -85,6 +85,7 @@
     - [ ] saving statistics
   - [x] jscripts
     - [x] functions and classes
+      - [x] more complex functions
   - [x] more backgrounds ?
     - [x] windows backgrounds
     - [ ] custom user backgrounds
@@ -93,17 +94,25 @@
     - [ ] see xps/levels
   - [x] add clicker itself
     - [x] error prompr 
-  - [ ] change log startup pop-up
+  - [x] change log startup pop-up
   - [ ] html to application
-    - [ ] make playeble windows .EXE verion 
+    - [ ] make playeble windows .EXE verion
   - [ ] gameplay indicators / tutorial
   - [ ] start up login
     - [ ] custom username 
   - [x] internet
     - [x] upgrades 
+    - [ ] early windows 98's look
+      - [ ] address bar
+      - [ ] when wrong url: "connect to the internet" message
     - [ ] error indicator
+  - [ ] toolbar
+    - [ ] start button
+    - [ ] clock
+    - [ ] internet conection
+      - [ ] state 1
+      - [ ] state 2
   - [ ] story ?
-  - [ ] toolbar with working clock ?
   - [ ] music player ?
     - [ ] <a href="https://www.youtube.com/playlist?list=PLwC2TnnAxEL39JinEItcJHv3wSsg0s_wq">this</a> playlist 
   - [ ] mobile version compatibility ?
