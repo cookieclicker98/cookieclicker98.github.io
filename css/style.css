@@ -59,7 +59,7 @@ button {
     box-shadow: 6px 6px rgba(0,0,0,.4);
 }
 
-.win, .win-button {
+.win, .win-button, .win-toolbar {
     background: var(--ms-winBackground);
     border-top: 2px solid var(--ms-winBackground-light);
     border-left: 2px solid var(--ms-winBackground-light);
@@ -73,10 +73,22 @@ button {
 }
 
 .win-bgIcon {
-    padding: 16px;
+    margin: 6px;
+    padding: 10px;
     font-size: 12px;
     color: var(--text-color);
     cursor: pointer;
+    text-align: center;
+    border: 1px dashed rgba(0,0,0,0);
+}
+
+.win-bgIcon:active {
+    border: 1px dashed gray;
+}
+
+.win-bgIcon-container {
+    width: 100%;
+    float: left;
 }
 
 .win-button {
@@ -84,7 +96,7 @@ button {
     width: 70px;
 }
 
-.win-button:hover {
+.win-button:hover, .win-toolbar-clock {
     background: var(--ms-winBackground);
     border-right: 2px solid var(--ms-winBackground-light);
     border-bottom: 2px solid var(--ms-winBackground-light);
@@ -217,6 +229,7 @@ button {
     position: absolute;
     z-index: 9999999999999999999999999999999;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .win-bsod > div {
@@ -229,12 +242,51 @@ button {
 .win-bsod-centerLogo {text-align: center;}
 .win-bsod-logo {background: white; color: blue; padding: 0 20px}
 
+.win-toolbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999999999999999999999999998;
+    padding: 2px;
+}
+
+.win-toolbar-start {
+    width: 70px;
+    text-align: right;
+    margin: 0;
+}
+
+.win-toolbar-start-icon {
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
+
+.win-toolbar-clock {
+    width: 120px;
+    text-align: right;
+    float: right;
+    margin: 0;
+    font-weight: bold;
+}
+
+.win-toolbar-clock-icon {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+}
+
+.win-toolbar-clock-icon:nth-child(2) {
+    right: 100px;
+}
+
 .footer {
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 0;
-    padding: 20px;
+    padding: 40px;
     font-weight: 700;
     cursor: default;
     opacity: .35;

@@ -10,15 +10,32 @@
   <img src="https://i.imgur.com/lQhHnNA.png" width="128px">
   <img src="https://i.imgur.com/msrNZnw.png" height="52px">
 </a>
+
 - It is year 1998, you are stuck home, wondering what you should do... You swiched on your Bindows Computer and try to surf on the internet, when Error Message pop-up. Will you be the ever first man, to get to the a million error promts? Let's find out who has the worst computer ever.
 - Cookie Clicker in style of Windows 98.
 - Play now on: <a href="https://cookieclicker98.github.io">cookieclicker98.github.io</a><br>
 
 ## Change Log
 
-### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">version v1.2</a>
-<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.3">version v1.3</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.3"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
 <a href="https://cookieclicker98.github.io"><img src="https://i.imgur.com/9qY4zpN.png" width="128px"></a>
+
+- altered bluescreen multiplier text<br>
+- altered background (apps) position<br>
+- added toolbar with<br>
+  - start button
+  - clock (fixed)
+  - running instances (working on)
+- altered background (apps) icons
+- bug fixes<br>
+  - typo in code (Multiplier x Multiplayer)
+
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">version v1.2</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">
+  <img src="https://i.imgur.com/CBalDfZ.png" width="128px">
+  <img src="https://i.imgur.com/uoNuyt1.png" width="128px">
+</a>
 
 - altered computer window
 - altered wallpapers/backgrounds 
@@ -97,9 +114,9 @@
       - [ ] address bar
       - [ ] when wrong url: "connect to the internet" message
     - [ ] error indicator
-  - [ ] toolbar
-    - [ ] start button
-    - [ ] clock
+  - [x] toolbar
+    - [x] start button
+    - [x] clock
     - [ ] internet conection
       - [ ] state 1
       - [ ] state 2

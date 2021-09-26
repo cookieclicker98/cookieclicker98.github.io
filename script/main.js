@@ -3,9 +3,9 @@ let errorsMax = 1;
 let errorSpent = 0;
 let errorClicks = 0;
 
-let multiplayer = 1;
-let eps = 0 * multiplayer;
-let epc = 1 * multiplayer;
+let multiplier = 1;
+let eps = 0 * multiplier;
+let epc = 1 * multiplier;
 
 let windowIndex = 5;
 
@@ -141,9 +141,9 @@ function updateErrors() {
     errorsEPC.innerHTML = epc;
     errorsEPS.innerHTML = eps;
     errorsClicked.innerHTML = errorClicks;
-    errorsSpendHolder.innerHTML = errorSpent*multiplayer;
-    errorMaxHolder.innerHTML = errorsMax*multiplayer;
-    errorsMP.innerHTML = multiplayer;
+    errorsSpendHolder.innerHTML = errorSpent*multiplier;
+    errorMaxHolder.innerHTML = errorsMax*multiplier;
+    errorsMP.innerHTML = multiplier;
     times0.innerHTML = buyAutoclicker-1;
     costs0.innerHTML = (buyAutoclicker*priceAutoclicker);
     times1.innerHTML = buyCrackedgame-1;
@@ -256,11 +256,32 @@ function buy(itemId) {
     setTimeout(updateErrors,0);
 }
 
+function clock() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let t;
+    if (h > 12) {
+        h -= 12;
+        t = " PM";
+    } else {
+        t = " AM"
+    }
+    m = checkTime(m);
+    document.getElementById("winClock").innerHTML =  h + ":" + m + t;
+    setTimeout(clock, 30000);
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+
 function restartGame() {
     errors = 1;
-    multiplayer = multiplayer+0.5;
-    eps = 0 * multiplayer;
-    epc = 1 * multiplayer;
+    multiplier = multiplier+0.5;
+    eps = 0 * multiplier;
+    epc = 1 * multiplier;
     buyAutoclicker = 1;
     buyCrackedgame = 1;
     buyPcfaster = 1;
