@@ -1,5 +1,6 @@
 function startUp() {
     getEPS();
+    clock();
 }
 
 function setCookie(name,value,days) {
