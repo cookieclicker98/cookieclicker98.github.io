@@ -16,25 +16,30 @@
     -->
 </head>
 <body onload="startUp()">
-<div class="win-bgIcon fl" onclick="openWindow(1)">
-    <img src="assets/msie2-2.png" height="48" width="48"/><br>
-    Internet
-</div>
-<div class="win-bgIcon fl" onclick="openWindow(2)">
-    <img src="assets/computer_explorer_cool-0.png" height="48" width="48"/><br>
-    Computer
-</div>
-<div class="win-bgIcon fl" onclick="openWindow(0)">
-    <img src="assets/notepad-2.png" height="48" width="48"/><br>
-    Changelog
-</div>
-<a href="https://github.com/neostetic" target=”_blank”>
-    <div class="win-bgIcon fl">
-        <img src="assets/console_prompt-0.png" height="48" width="48"/><br>
-        Developer
+<div class="win-bgIcon-container">
+    <div class="win-bgIcon fl" onclick="openWindow(1)">
+        <img src="assets/msie2-2.png" height="48" width="48"/><br>
+        Internet
     </div>
-</a>
-
+    <a href="https://github.com/neostetic" target=”_blank”>
+        <div class="win-bgIcon fl">
+            <img src="assets/console_prompt-0.png" height="48" width="48"/><br>
+            Developer
+        </div>
+    </a>
+</div>
+<div class="win-bgIcon-container">
+    <div class="win-bgIcon fl" onclick="openWindow(2)">
+        <img src="assets/computer_explorer_cool-0.png" height="48" width="48"/><br>
+        Computer
+    </div>
+</div>
+<div class="win-bgIcon-container">
+    <div class="win-bgIcon fl" onclick="openWindow(0)">
+        <img src="assets/notepad-2.png" height="48" width="48"/><br>
+        Changelog
+    </div>
+</div>
 <div class="win fl center" id="winWelcome">
     <div class="win-title fl">
         <div class="win-title-text fl">Changelog</div>
@@ -53,7 +58,6 @@
         <button class="win-button win-button-default" onclick="closeWindow(0)"><b><u>O</u>K</b></button>
     </div>
 </div>
-
 <div class="win fl center" id="winError">
     <div class="win-title fl">
         <div class="win-title-text fl">FATAL ERROR x <span id="errorTitle">1</span> Errors</div>
@@ -139,8 +143,6 @@
         *EPC - Errors per Click
     </div>
 </div>
-
-
 <div class="win fl center" id="winComputer">
     <div class="win-title fl">
         <div class="win-title-text fl">Computer Settings</div>
@@ -163,7 +165,7 @@
         &emsp;&emsp;Every Error Spend: <span id="errorsSpendHolder"></span><br>
         &emsp;&emsp;Current EPS: <span id="errorsEPS"></span><br>
         &emsp;&emsp;Current EPC: <span id="errorsEPC"></span><br>
-        &emsp;&emsp;Current Multiplayer: <span id="errorsMP"></span>x<br>
+        &emsp;&emsp;Current Multiplier: <span id="errorsMP"></span>x<br>
         <br>
         <b>Change Background:</b><br>
         <button class="win-button cA" onclick="changeBackground('#008080')"></button>
@@ -202,13 +204,26 @@
         <br>
         <b>Click on Screen</b> to return to your work you were doing, or:<br>
         <br>
-        Press CTRL+L and write "github.com/neostetic". Press the follow button the Creator and make him bit happy that he finally gets the followers he wants.<br>
+        Press Ctrl+Alt+Del to try restarting your system and reboot complete disk ">/:C". For more information and help, please contact our support on our Github (github.com/cookieclicker98).
         <br>
-        Error: TH4T-W0U1D-B3-N1C3 :)
+        Error: Y0UR-5Y5TM-I5-FCKD.
     </div>
 </div>
 <div class="footer">
     © 2021 - Jan Polacek (<a href="https://github.com/neostetic" target=”_blank”>neostetic</a>)
+</div>
+<div class="win-toolbar">
+    <button class="win-button win-toolbar-start">
+        <b>
+            <img class="win-toolbar-start-icon" src="assets/windows-0.png" height="18"/>
+            Start
+        </b>
+    </button>
+    <button class="win-button win-toolbar-clock">
+        <img class="win-toolbar-clock-icon" src="assets/world-2.png" height="14"/>
+        <img class="win-toolbar-clock-icon" src="assets/key_win_alt-2.png" height="14"/>
+        <span id="winClock">0:00 AM</span>
+    </button>
 </div>
 <script src="script/cookie.js"></script>
 <script src="script/main.js"></script>
