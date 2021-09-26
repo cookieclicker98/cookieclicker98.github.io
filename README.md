@@ -30,7 +30,6 @@
 - altered background (apps) icons
 - bug fixes<br>
   - typo in code (Multiplier x Multiplayer)
-<br>
 
 ### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">version v1.2</a>
 <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">
