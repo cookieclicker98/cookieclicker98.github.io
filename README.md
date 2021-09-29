@@ -88,7 +88,7 @@
 ## Roadmap
 
 - Todo
-  - [ ] change "Multiplayer" to "Multiplier" (miss understand)
+  - [x] change "Multiplayer" to "Multiplier" (miss understand)
   - [ ] some roadmap
   - [ ] bug fixes
 
