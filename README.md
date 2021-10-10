@@ -143,9 +143,11 @@
     - [ ] internet conection
       - [ ] state 1
       - [ ] state 2
-  - [ ] story ?
-  - [ ] music player ?
+  - [ ] story*
+  - [ ] music player*
     - [ ] <a href="https://www.youtube.com/playlist?list=PLwC2TnnAxEL39JinEItcJHv3wSsg0s_wq">this</a> playlist 
-  - [ ] mobile version compatibility ?
+  - [ ] mobile version compatibility*
     - [ ] website responsive
     - [ ] custom application / game 
+
+*maybe
