@@ -6,6 +6,8 @@ let errorClicks = 0;
 let multiplier = 1;
 let eps = 0 * multiplier;
 let epc = 1 * multiplier;
+let username = "Admin";
+let firstTime = 0;
 
 let windowIndex = 5;
 
@@ -55,6 +57,8 @@ let winComputer = document.getElementById("winComputer");
 let winError = document.getElementById("winError");
 let winFunds = document.getElementById("winFunds");
 let winBsod = document.getElementById("winBsod");
+let winLogin = document.getElementById("winLogin");
+let winMenu = document.getElementById("winMenu");
 let errorsEPS = document.getElementById("errorsEPS");
 let errorsEPC = document.getElementById("errorsEPC");
 let errorsMP = document.getElementById("errorsMP");
@@ -62,6 +66,8 @@ let errorsGenerated = document.getElementById("errorsGenerated");
 let errorsClicked = document.getElementById("errorsClickedHolder");
 let errorMaxHolder = document.getElementById("errorMaxHolder");
 let errorsSpendHolder = document.getElementById("errorsSpendHolder");
+let errorsInternet = document.getElementById("errorsInternet");
+let usernamePc = document.getElementById("username-pc");
 
 function closeWindow(id) {
     let styleId;
@@ -78,6 +84,10 @@ function closeWindow(id) {
     } else if (id === 5) {
         styleId = winBsod;
         setTimeout(openWindow(3), 1839);
+    } else if (id === 6) {
+        styleId = winLogin;
+    } else if (id === 7) {
+        styleId = winMenu;
     }
     styleId.style.display = "none";
 }
@@ -96,6 +106,10 @@ function openWindow(id) {
         styleId = winFunds;
     } else if (id === 5) {
         styleId = winBsod;
+    } else if (id === 6) {
+        styleId = winLogin;
+    } else if (id === 7) {
+        styleId = winMenu;
     }
     styleId.style.display = "block";
     topWindow(id);
@@ -115,10 +129,25 @@ function topWindow(id) {
         styleId = winFunds;
     } else if (id === 5) {
         styleId = winBsod;
+    } else if (id === 6) {
+        styleId = winLogin;
+    } else if (id === 7) {
+        styleId = winMenu;
     }
     windowIndex++;
     styleId.style.display = "block";
     styleId.style.zIndex = windowIndex;
+}
+
+let switcher = 0;
+function startSwitch() {
+    if (switcher === 0) {
+        openWindow(7);
+        switcher = 1;
+    } else {
+        closeWindow(7);
+        switcher = 0;
+    }
 }
 
 function getErrors() {
@@ -138,6 +167,7 @@ function getEPS() {
 function updateErrors() {
     errorTitle.innerHTML = errors;
     errorsGenerated.innerHTML = errors;
+    errorsInternet.innerHTML = errors;
     errorsEPC.innerHTML = epc;
     errorsEPS.innerHTML = eps;
     errorsClicked.innerHTML = errorClicks;
@@ -162,6 +192,7 @@ function updateErrors() {
     costs7.innerHTML = (buyUpgradehardware*priceUpgradehardware);
     times8.innerHTML = buyRecyclebin-1;
     costs8.innerHTML = (buyRecyclebin*priceRecyclebin);
+    usernamePc.innerHTML = username;
 }
 
 function buy(itemId) {
@@ -256,6 +287,40 @@ function buy(itemId) {
     setTimeout(updateErrors,0);
 }
 
+function login() {
+    username = document.getElementById("username-input").value;
+    if (username.trim() === "") {
+        username = "Admin";
+    }
+    closeWindow(6);
+    updateErrors();
+    setTimeout(setDone, 632);
+}
+
+function logoff() {
+    closeWindow(0);
+    closeWindow(1);
+    closeWindow(2);
+    closeWindow(3);
+    closeWindow(4);
+    closeWindow(5);
+    closeWindow(7);
+    switcher = 0;
+    document.getElementById("winIcons").style.display = "none";
+    document.getElementById("winToolbar").style.display = "none";
+    openWindow(6);
+}
+
+function setDone() {
+    document.getElementById("winIcons").style.display = "block";
+    document.getElementById("winToolbar").style.display = "block";
+    openWindow(3);
+    if (firstTime === 0) {
+        openWindow(0);
+        firstTime++;
+    }
+}
+
 function clock() {
     const today = new Date();
     let h = today.getHours();
@@ -315,4 +380,9 @@ function changeBackground(color_text) {
 
 function changeFontColor(font_color) {
     document.documentElement.style.setProperty('--text-color', font_color);
+}
+
+function changeTitleBackground(first_color, second_color) {
+    document.documentElement.style.setProperty('--title-background-first', first_color);
+    document.documentElement.style.setProperty('--title-background-second', second_color);
 }

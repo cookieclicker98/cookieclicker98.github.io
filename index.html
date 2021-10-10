@@ -16,28 +16,30 @@
     -->
 </head>
 <body onload="startUp()">
-<div class="win-bgIcon-container">
-    <div class="win-bgIcon fl" onclick="openWindow(1)">
-        <img src="assets/msie2-2.png" height="48" width="48"/><br>
-        Internet
-    </div>
-    <a href="https://github.com/neostetic" target=”_blank”>
-        <div class="win-bgIcon fl">
-            <img src="assets/console_prompt-0.png" height="48" width="48"/><br>
-            Developer
+<div id="winIcons">
+    <div class="win-bgIcon-container">
+        <div class="win-bgIcon fl" onclick="openWindow(1)">
+            <img src="assets/msie2-2.png" height="48" width="48"/><br>
+            Internet
         </div>
-    </a>
-</div>
-<div class="win-bgIcon-container">
-    <div class="win-bgIcon fl" onclick="openWindow(2)">
-        <img src="assets/computer_explorer_cool-0.png" height="48" width="48"/><br>
-        Computer
+        <a href="https://github.com/neostetic" target=”_blank”>
+            <div class="win-bgIcon fl">
+                <img src="assets/console_prompt-0.png" height="48" width="48"/><br>
+                Developer
+            </div>
+        </a>
     </div>
-</div>
-<div class="win-bgIcon-container">
-    <div class="win-bgIcon fl" onclick="openWindow(0)">
-        <img src="assets/notepad-2.png" height="48" width="48"/><br>
-        Changelog
+    <div class="win-bgIcon-container">
+        <div class="win-bgIcon fl" onclick="openWindow(2)">
+            <img src="assets/computer_explorer_cool-0.png" height="48" width="48"/><br>
+            Computer
+        </div>
+    </div>
+    <div class="win-bgIcon-container">
+        <div class="win-bgIcon fl" onclick="openWindow(0)">
+            <img src="assets/notepad-2.png" height="48" width="48"/><br>
+            Changelog
+        </div>
     </div>
 </div>
 <div class="win fl center" id="winWelcome">
@@ -58,10 +60,10 @@
         <button class="win-button win-button-default" onclick="closeWindow(0)"><b><u>O</u>K</b></button>
     </div>
 </div>
-<div class="win fl center" id="winError">
+<div class="win fl center" id="winError" onclick="getErrors()">
     <div class="win-title fl">
         <div class="win-title-text fl">FATAL ERROR x <span id="errorTitle">1</span> Errors</div>
-        <button class="win-title-cross win-button fl" onclick="getErrors()">X</button>
+        <button class="win-title-cross win-button fl">X</button>
     </div>
     <div class="win-text fl">
         <img src="assets/msg_warning-0.png" class="fl win-icon-left" height="32" width="32"/><br>
@@ -71,8 +73,8 @@
     </div>
     <div class="win-buttons fl">
         <button class="win-button" onclick="getErrors()"><u>C</u>ancel</button>
-        <button class="win-button win-button-default" onclick="getErrors()"><u>R</u>etry</button>
-        <button class="win-button win-button-default" onclick="getErrors()"><b><u>O</u>K</b></button>
+        <button class="win-button win-button-default"><u>R</u>etry</button>
+        <button class="win-button win-button-default"><b><u>O</u>K</b></button>
     </div>
 </div>
 <div class="win fl center" id="winInternet">
@@ -82,7 +84,12 @@
     </div>
     <div class="win-text fl center-text">
         <img src="assets/msie1-5.png" height="48" width="48"/><br>
-        <b>Welcome to "The Internet"</b>
+        <b>
+            Welcome to "The Internet"<br>
+            <span style="font-size: 18px">
+                Errors: <span id="errorsInternet"></span>
+            </span>
+        </b>
         <div>
             <button class="win-button" onclick="buy(0)">
                 <img src="assets/mouse-5.png" height="48" width="48"/><br>
@@ -151,11 +158,11 @@
     <div class="win-text fl">
         <b>System</b><br>
         &emsp;&emsp;System Minesoft Bindowns 98<br>
-        &emsp;&emsp;Version 1.3 (Html Edition)<br>
-        &emsp;&emsp;Y21:09:20<br>
+        &emsp;&emsp;Version 1.4 (Html Edition)<br>
+        &emsp;&emsp;Y21:10:11<br>
         <br>
         <b>Registered User:</b><br>
-        &emsp;&emsp;Admin (Host)<br>
+        &emsp;&emsp;<span id="username-pc">Admin</span> (Host)<br>
         &emsp;&emsp;60DSG049H09283:A<br>
         <br>
         <b>Statistics:</b><br>
@@ -209,11 +216,64 @@
         Error: Y0UR-5Y5TM-I5-FCKD.
     </div>
 </div>
+<div class="win fl center" id="winLogin">
+    <div class="win-title fl">
+        <div class="win-title-text fl">Welcome to Bindows</div>
+        <button class="win-title-cross win-button fl" onclick="closeWindow(6)">X</button>
+    </div>
+    <div class="win-text fl">
+        <img src="assets/key_win_alt-2.png" class="fl win-icon-left" height="48" width="48"/><br>
+        Type a user name and password to log on Bindows.<br>
+        <br>
+        &emsp;<u>U</u>sername: <input class="win-input" id="username-input" onsubmit="login()"/><br>
+        <br>
+        &emsp;<u>P</u>assword: <input class="win-input" type="password" onsubmit="login()"/><br>
+    </div>
+    <div class="win-buttons fl">
+        <button class="win-button" onclick="login()"><u>C</u>ancel</button>
+        <button class="win-button win-button-default" onclick="login()"><b><u>O</u>K</b></button>
+    </div>
+</div>
+<div class="win fl" id="winMenu">
+    <div class="win-menu-fl fl">
+        <button onclick="openWindow(3)">
+            <img src="assets/directory_explorer-0.png" width="28"/>
+            Explorer
+        </button>
+        <button onclick="openWindow(2)">
+            <img src="assets/computer_explorer_cool-0.png" width="28"/>
+            Computer</button>
+        <button onclick="openWindow(1)">
+            <img src="assets/msie2-2.png" width="28"/>
+            Internet
+        </button>
+        <button onclick="openWindow(0)">
+            <img src="assets/notepad-2.png" width="28"/>
+            Updates
+        </button>
+        <button>
+            <img src="assets/help_book_cool-4.png" width="28"/>
+            Help
+        </button>
+        <div></div>
+        <button onclick="logoff()">
+            <img src="assets/keys-5.png" width="28"/>
+            Log Off...
+        </button>
+        <button>
+            <img src="assets/computer_2_cool-4.png" width="28"/>
+            Shut Down...
+        </button>
+    </div>
+    <div class="win-menu-logo">
+        <b>Bindowns</b>98
+    </div>
+</div>
 <div class="footer">
     © 2021 - Jan Polacek (<a href="https://github.com/neostetic" target=”_blank”>neostetic</a>)
 </div>
-<div class="win-toolbar">
-    <button class="win-button win-toolbar-start">
+<div class="win-toolbar" id="winToolbar">
+    <button class="win-button win-toolbar-start" onclick="startSwitch()">
         <b>
             <img class="win-toolbar-start-icon" src="assets/windows-0.png" height="18"/>
             Start

@@ -5,6 +5,8 @@
     --ms-winBackground-light: hsl(0, 0%, Calc(var(--ms-win) + 50%));
     --ms-background: #008080;
     --text-color: white;
+    --title-background-first: rgba(0,8,132,1);
+    --title-background-second: rgba(8,132,206,1);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
@@ -91,17 +93,22 @@ button {
     float: left;
 }
 
-.win-button {
+.win-button, .win-input {
     margin-left: 3px;
     width: 70px;
 }
 
-.win-button:hover, .win-toolbar-clock {
+.win-button:hover, .win-toolbar-clock, .win-input {
     background: var(--ms-winBackground);
     border-right: 2px solid var(--ms-winBackground-light);
     border-bottom: 2px solid var(--ms-winBackground-light);
     border-top: 2px solid var(--ms-winBackground-dark);
     border-left: 2px solid var(--ms-winBackground-dark);
+}
+
+.win-input {
+    background: white;
+    width: 120px;
 }
 
 .win-button:active {
@@ -125,9 +132,9 @@ button {
     color: white;
     padding: 2px 2px;
     background: rgb(0,8,132);
-    background: -moz-linear-gradient(90deg, rgba(0,8,132,1) 0%, rgba(8,132,206,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,8,132,1) 0%, rgba(8,132,206,1) 100%);
-    background: linear-gradient(90deg, rgba(0,8,132,1) 0%, rgba(8,132,206,1) 100%);
+    background: -moz-linear-gradient(90deg, var(--title-background-first) 0%, var(--title-background-second) 100%);
+    background: -webkit-linear-gradient(90deg, var(--title-background-first) 0%, var(--title-background-second) 100%);
+    background: linear-gradient(90deg, var(--title-background-first) 0%, var(--title-background-second) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000884",endColorstr="#0884ce",GradientType=1);
 }
 
@@ -149,6 +156,7 @@ button {
 #winWelcome {
     z-index: 3;
     width: 620px;
+    display: none;
 }
 
 #winInternet {
@@ -210,10 +218,10 @@ button {
 #winError {
     z-index: 1;
     width: 450px;
+    display: none;
 }
 
 #winFunds {
-    z-index: 999;
     width: 360px;
     display: none;
 }
@@ -227,9 +235,72 @@ button {
     height: 100%;
     background: blue;
     position: absolute;
-    z-index: 9999999999999999999999999999999;
+    z-index: 9999999;
     font-size: 20px;
     cursor: pointer;
+}
+
+#winLogin {
+    z-index: 4;
+    width: 560px;
+}
+
+#winMenu {
+    position: absolute;
+    bottom: 30px;
+    display: none;
+}
+
+.win-menu-logo {
+    width: 290px;
+    position: absolute;
+    pointer-events: none;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    color: white;
+    bottom: -27px;
+    font-size: 20px;
+    padding: 2px 5px;
+    background: rgb(0,8,132);
+    background: -moz-linear-gradient(90deg, var(--title-background-first) 0%, var(--title-background-second) 100%);
+    background: -webkit-linear-gradient(90deg, var(--title-background-first) 0%, var(--title-background-second) 100%);
+    background: linear-gradient(90deg, var(--title-background-first) 0%, var(--title-background-second) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000884",endColorstr="#0884ce",GradientType=1);
+}
+
+.win-menu-fl {
+    padding-left: 28px;
+}
+
+.win-menu-fl > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+    text-align: left;
+    margin: 2px;
+    padding: 5px;
+    display: flex;
+    align-items:center;
+}
+
+.win-menu-fl > button > img {
+    margin-right: 10px;
+}
+
+.win-menu-fl > button:hover {
+    background: var(--title-background-first);
+    color: white;
+}
+
+.win-menu-fl > div {
+    margin: 3px 5px;
+    width: 192px;
+    border-right: 2px solid var(--ms-winBackground-light);
+    border-bottom: 2px solid var(--ms-winBackground-light);
+    border-top: 2px solid var(--ms-winBackground-dark);
+    border-left: 2px solid var(--ms-winBackground-dark);
 }
 
 .win-bsod > div {
@@ -242,12 +313,16 @@ button {
 .win-bsod-centerLogo {text-align: center;}
 .win-bsod-logo {background: white; color: blue; padding: 0 20px}
 
+#winIcons, #winToolbar {
+    display: none;
+}
+
 .win-toolbar {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 9999999999999999999999999999998;
+    z-index: 0;
     padding: 2px;
 }
 
