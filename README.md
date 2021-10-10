@@ -129,7 +129,7 @@
   - [ ] html to application
     - [ ] make playeble windows .EXE verion
   - [ ] gameplay indicators / tutorial
-  - [ x start up login
+  - [x] start up login
     - [x] custom username 
   - [x] internet
     - [x] upgrades 
