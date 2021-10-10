@@ -39,7 +39,7 @@
    - z-index fix<br>
 
 ### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.3">version v1.3</a>
-<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.2">
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.3">
   <img src="https://i.imgur.com/CBalDfZ.png" width="128px">
   <img src="https://i.imgur.com/uoNuyt1.png" width="128px">
 </a>
