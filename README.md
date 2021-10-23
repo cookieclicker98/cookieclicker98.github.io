@@ -109,6 +109,7 @@
   - [x] change "Multiplayer" to "Multiplier" (miss understand)
   - [ ] some roadmap
   - [ ] bug fixes
+  - [ ] fix Cancel button on Error (2xEPC)
 
 - Add:
   - [ ] cookies
