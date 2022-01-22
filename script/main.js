@@ -1,12 +1,12 @@
 let errors = 1;
-let errorsMax = 1;
+let errorsMax = 0;
 let errorSpent = 0;
 let errorClicks = 0;
 
 let multiplier = 1;
 let eps = 0 * multiplier;
 let epc = 1 * multiplier;
-let username = "Admin";
+let username = getCookie("username");
 let firstTime = 0;
 
 let windowIndex = 5;
@@ -292,6 +292,7 @@ function login() {
     if (username.trim() === "") {
         username = "Admin";
     }
+    setCookie("username",username,365);
     closeWindow(6);
     updateErrors();
     setTimeout(setDone, 632);

@@ -17,16 +17,27 @@
 
 ## Change Log
 
-
+- <a href="#version-v15">v1.5</a>
 - <a href="#version-v14">v1.4</a>
 - <a href="#version-v13">v1.3</a>
 - <a href="#version-v12">v1.2</a>
 - <a href="#version-v12-alpha">v1.2-alpha</a>
 - <a href="#version-v11">v1.1</a>
 
-### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.4">version v1.4</a>
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.5">version v1.5</a>
 <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.4"><img src="https://i.imgur.com/CBalDfZ.png" width="128px"></a>
 <a href="https://cookieclicker98.github.io"><img src="https://i.imgur.com/9qY4zpN.png" width="128px"></a>
+
+- added cookies (only username)<br>
+- bug fixes<br>
+  - fixed Cancel button<br>
+
+
+### <a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.4">version v1.4</a>
+<a href="https://github.com/cookieclicker98/cookieclicker98.github.io/releases/tag/v1.4">
+  <img src="https://i.imgur.com/CBalDfZ.png" width="128px">
+  <img src="https://i.imgur.com/uoNuyt1.png" width="128px">
+</a>
 
  - full error window is adding errors <br>
  - added login and startup (-animation)<br>
@@ -107,12 +118,12 @@
 
 - Todo
   - [x] change "Multiplayer" to "Multiplier" (miss understand)
+  - [x] fix Cancel button on Error (2xEPC)
   - [ ] some roadmap
   - [ ] bug fixes
-  - [ ] fix Cancel button on Error (2xEPC)
 
 - Add:
-  - [ ] cookies
+  - [x] cookies
     - [ ] saving progress
     - [ ] saving statistics
   - [x] jscripts

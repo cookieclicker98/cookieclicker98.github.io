@@ -1,6 +1,7 @@
 function startUp() {
     getEPS();
     clock();
+    document.getElementById("username-input").value = getCookie("username");
 }
 
 function setCookie(name,value,days) {
